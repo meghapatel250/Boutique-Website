@@ -1,0 +1,3214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Index Boutique</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+	<!-- BOOTSTRAP CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+	<!-- BOOTSTRAP JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- Testimonial -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+		body {
+			line-height: 1.5;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			overflow-x: hidden;
+		}
+
+		* {
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		:before,
+		:after {
+			box-sizing: border-box;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: auto;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.v-center {
+			align-items: center;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		/*================================= header =========================*/
+		.header {
+			background-color: white;
+			display: block;
+			height: 100px;
+			width: 100%;
+			position: relative;
+			z-index: 99;
+			padding: 5px;
+		}
+
+		.header .item-left {
+			flex: 0 0 12%;
+		}
+
+		.header .logo-div{
+			width: 100px;
+			height: auto;
+		}
+
+		.header .logo-div img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.header .item-center {
+			flex: 0 0 66%;
+		}
+
+		.header .item-right {
+			flex: 0 0 20%;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.header .item-right a {
+			text-decoration: none;
+			font-size: 16px;
+			color: #555555;
+			display: inline-block;
+			margin-left: 10px;
+			transition: color 0.3s ease;
+		}
+
+		.header .menu>ul>li {
+			display: inline-block;
+			line-height: 50px;
+			margin-left: 25px;
+		}
+
+		.header .menu>ul>li>a {
+			font-size: 15px;
+			font-weight: 500;
+			color: #000000;
+			position: relative;
+			text-transform: capitalize;
+			transition: color 0.3s ease;
+		}
+
+		.header .menu>ul>li .sub-menu {
+			position: absolute;
+			z-index: 500;
+			background-color: #ffffff;
+			box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+			padding: 20px 30px;
+			transition: all 0.5s ease;
+			margin-top: 25px;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		@media(min-width: 992px) {
+			.header .menu>ul>li.menu-item-has-children:hover .sub-menu {
+				margin-top: 0;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		.header .menu>ul>li .sub-menu>ul>li {
+			line-height: 1;
+		}
+
+		.header .menu>ul>li .sub-menu>ul>li>a {
+			display: inline-block;
+			padding: 10px 0;
+			font-size: 15px;
+			color: #555555;
+			transition: color 0.3s ease;
+			text-decoration: none;
+			text-transform: capitalize;
+		}
+
+		.header .menu>ul>li .single-column-menu {
+			min-width: 280px;
+			max-width: 350px;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu>.list-item>ul>li {
+			line-height: 1;
+			display: block;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu>.list-item>ul>li>a {
+			padding: 10px 0;
+			display: inline-block;
+			font-size: 15px;
+			color: #555555;
+			transition: color 0.3s ease;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu-column-4 {
+			max-width: 1100px;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 20px 15px;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item {
+			flex: 0 0 25%;
+			padding: 0 15px;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item .title {
+			font-size: 16px;
+			color: #ea4636;
+			font-weight: 500;
+			line-height: 1;
+			padding: 10px 0;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item.text-center .title {
+			text-align: center;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item img {
+			max-width: 100%;
+			width: 100%;
+			vertical-align: middle;
+			margin-top: 10px;
+			height: 300px;
+			object-fit: cover;
+		}
+
+		.header .menu>ul>li .sub-menu.mega-menu>.list-item>ul>li>a:hover,
+		.header .menu>ul>li .sub-menu>ul>li>a:hover,
+		.header .item-right a:hover,
+		.header .menu>ul>li:hover>a {
+			color: #bb4444;
+		}
+
+		/*================================= BANNER SECTION ==================================*/
+		.banner-section {
+			background-image: url('../img/banner.jpg');
+			background-size: cover;
+			background-position: center;
+			height: 700px;
+			width: 100%;
+			display: block;
+		}
+
+		.mobile-menu-head,
+		.mobile-menu-trigger {
+			display: none;
+		}
+
+		/*responsive*/
+		@media(max-width: 991px) {
+
+			.header .item-center {
+				order: 3;
+				flex: 0 0 100%;
+			}
+
+			.header .item-left,
+			.header .item-right {
+				flex: 0 0 auto;
+			}
+
+			.v-center {
+				justify-content: space-between;
+			}
+
+			.header .mobile-menu-trigger {
+				display: flex;
+				height: 30px;
+				width: 30px;
+				margin-left: 15px;
+				cursor: pointer;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.header .mobile-menu-trigger span {
+				display: block;
+				height: 2px;
+				background-color: #333333;
+				width: 24px;
+				position: relative;
+			}
+
+			.header .mobile-menu-trigger span:before,
+			.header .mobile-menu-trigger span:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #333333;
+			}
+
+			.header .mobile-menu-trigger span:before {
+				top: -6px;
+			}
+
+			.header .mobile-menu-trigger span:after {
+				top: 6px;
+			}
+
+			.header .item-right {
+				align-items: center;
+			}
+
+			.header .menu {
+				position: fixed;
+				width: 320px;
+				background-color: #ffffff;
+				left: 0;
+				top: 0;
+				height: 100%;
+				overflow: hidden;
+				transform: translate(-100%);
+				transition: all 0.5s ease;
+				z-index: 1099;
+			}
+
+			.header .menu.active {
+				transform: translate(0%);
+			}
+
+			.header .menu>ul>li {
+				line-height: 1;
+				margin: 0;
+				display: block;
+			}
+
+			.header .menu>ul>li>a {
+				line-height: 50px;
+				height: 50px;
+				padding: 0 50px 0 15px;
+				display: block;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			.header .menu>ul>li>a i {
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				top: 0;
+				right: 0;
+				text-align: center;
+				line-height: 50px;
+				transform: rotate(-90deg);
+			}
+
+			.header .menu .mobile-menu-head {
+				display: flex;
+				height: 50px;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+				z-index: 501;
+				position: sticky;
+				background-color: #ffffff;
+				top: 0;
+			}
+
+			.header .menu .mobile-menu-head .go-back {
+				height: 50px;
+				width: 50px;
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+				cursor: pointer;
+				line-height: 50px;
+				text-align: center;
+				color: #000000;
+				font-size: 16px;
+				display: none;
+			}
+
+			.header .menu .mobile-menu-head.active .go-back {
+				display: block;
+			}
+
+			.header .menu .mobile-menu-head .current-menu-title {
+				font-size: 15px;
+				font-weight: 500;
+				color: #000000;
+			}
+
+			.header .menu .mobile-menu-head .mobile-menu-close {
+				height: 50px;
+				width: 50px;
+				border-left: 1px solid rgba(0, 0, 0, 0.1);
+				cursor: pointer;
+				line-height: 50px;
+				text-align: center;
+				color: #000000;
+				font-size: 25px;
+			}
+
+			.header .menu .menu-main {
+				height: 100%;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+
+			.header .menu>ul>li .sub-menu.mega-menu,
+			.header .menu>ul>li .sub-menu {
+				visibility: visible;
+				opacity: 1;
+				position: absolute;
+				box-shadow: none;
+				margin: 0;
+				padding: 15px;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding-top: 65px;
+				max-width: none;
+				min-width: auto;
+				display: none;
+				transform: translateX(0%);
+				overflow-y: auto;
+			}
+
+			.header .menu>ul>li .sub-menu.active {
+				display: block;
+			}
+
+			@keyframes slideLeft {
+				0% {
+					opacity: 0;
+					transform: translateX(100%);
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateX(0%);
+				}
+			}
+
+			@keyframes slideRight {
+				0% {
+					opacity: 1;
+					transform: translateX(0%);
+				}
+
+				100% {
+					opacity: 0;
+					transform: translateX(100%);
+				}
+			}
+
+			.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item img {
+				margin-top: 0;
+			}
+
+			.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item.text-center .title {
+				margin-bottom: 20px;
+			}
+
+			.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item.text-center:last-child .title {
+				margin-bottom: 0px;
+			}
+
+			.header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item {
+				flex: 0 0 100%;
+				padding: 0px;
+			}
+
+			.header .menu>ul>li .sub-menu>ul>li>a,
+			.header .menu>ul>li .sub-menu.mega-menu>.list-item>ul>li>a {
+				display: block;
+			}
+
+			.header .menu>ul>li .sub-menu.mega-menu>.list-item>ul {
+				margin-bottom: 15px;
+			}
+
+			.menu-overlay {
+				position: fixed;
+				background-color: rgba(0, 0, 0, 0.5);
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+
+				z-index: 1098;
+				visibility: hidden;
+				opacity: 0;
+				transition: all 0.5s ease;
+			}
+
+			.menu-overlay.active {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		/*================================= UPPER BANNER START==================================*/
+
+		/*================================= UPPER BANNER END ==================================*/
+
+
+		/*================================= ABOUT US ==================================*/
+		#about-div h1,
+		#about-div h2,
+		#about-div h3,
+		#about-div h4,
+		#about-div h5,
+		#about-div h6 {
+			color: #2c3145;
+		}
+
+		#about-div a,
+		#about-div a:hover,
+		#about-div a:focus,
+		#about-div a:active {
+			text-decoration: none;
+			outline: none;
+		}
+
+		#about-div ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		#about-div .section_all {
+			position: relative;
+			padding-top: 80px;
+			padding-bottom: 80px;
+			min-height: 100vh;
+		}
+
+		#about-div .section-title {
+			font-weight: 700;
+			text-transform: capitalize;
+			letter-spacing: 1px;
+		}
+
+		#about-div .section_all .vertical_content_manage .image-about-1,
+		#about-div .section_all .vertical_content_manage .image-about-2 {
+			height: 430px;
+			width: 300px;
+		}
+
+		#about-div .section_all .vertical_content_manage .image-about-1 img,
+		#about-div .section_all .vertical_content_manage .image-about-2 img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		#about-div .section_all .vertical_content_manage .image-about-1 {
+			margin-top: -50px;
+			margin-left: -40px;
+		}
+
+		#about-div .section_all .vertical_content_manage .image-about-2 {
+			margin-left: 10px;
+		}
+
+		@media (max-width:766px) {
+			#about-div .section_all .vertical_content_manage .image-about-1 {
+				margin-top: 0;
+				margin-left: 0;
+			}
+		}
+
+		@media (min-width:430px) and (max-width:766px) {
+
+			#about-div .section_all .vertical_content_manage .image-about-1,
+			#about-div .section_all .vertical_content_manage .image-about-2 {
+				height: 430px;
+				width: 370px;
+			}
+		}
+
+		@media (min-width:348px) and (max-width:430px) {
+
+			#about-div .section_all .vertical_content_manage .image-about-1,
+			#about-div .section_all .vertical_content_manage .image-about-2 {
+				height: 360px;
+				width: 300px;
+			}
+		}
+
+		@media (max-width:348px) {
+
+			#about-div .section_all .vertical_content_manage .image-about-1,
+			#about-div .section_all .vertical_content_manage .image-about-2 {
+				height: 270px;
+				width: 230px;
+			}
+		}
+
+		#about-div .section-subtitle {
+			letter-spacing: 0.4px;
+			line-height: 28px;
+			max-width: 550px;
+		}
+
+		#about-div .section-title-border {
+			background-color: #000;
+			height: 13px;
+			width: 44px;
+		}
+
+		#about-div .section-title-border-white {
+			background-color: #fff;
+			height: 2px;
+			width: 100px;
+		}
+
+		#about-div .text_custom {
+			color: #00bd2a;
+		}
+
+		#about-div .about_icon i {
+			font-size: 22px;
+			height: 65px;
+			width: 65px;
+			line-height: 65px;
+			display: inline-block;
+			background: #fff;
+			border-radius: 35px;
+			color: #00bd2a;
+			box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
+		}
+
+		#about-div .about_header_main .about_heading {
+			max-width: 450px;
+			font-size: 24px;
+		}
+
+		#about-div .about_icon span {
+			position: relative;
+			top: -10px;
+		}
+
+		/* ============================= PRODUCT DIV===================================== */
+		#product-div {
+			padding: 0 10px;
+		}
+
+    #product-div .tabs {
+    background-color: white;
+  position: relative;   
+  min-height: 780px; /* This part sucks */
+  clear: both;
+  margin: 2px 0;
+}
+#product-div .tab {
+  float: left;  
+  clear: both;
+  width: 130px;
+  height: 50px;
+}
+#product-div .tabs .sidebar-heading h3{
+  margin: 0 0 0 30px;
+}
+#product-div .tab label {
+  background: rgb(179, 97, 97); 
+  color: white;
+  padding: 10px 25px; 
+  border: 1px solid transparent; 
+  margin-left: -1px; 
+  font-size: 12px;
+  position: relative;
+  left: 30px;   
+  width: 200px;
+  display: block;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px;
+}
+
+#product-div .tab [type=radio] {
+  display: none;   
+}
+#product-div .content {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+#product-div [type=radio]:checked ~ label {
+  background: white;
+  color: black;
+  border-bottom: 1px solid #63130d;
+  z-index: 2;
+}
+#product-div [type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+
+/********************* product cards start **********************/
+#product-div .product-grid9 {
+  position: relative;
+  font-family: Poppins, sans-serif;
+  z-index: 1;
+}
+#product-div .product-grid9 .product-image9 {
+  position: relative;
+}
+#product-div .product-grid9 .product-image9 a {
+  display: block;
+}
+#product-div .product-grid9 .product-image9 img {
+  width: 85%;
+  border-radius: 2%;
+  height: auto;
+}
+#product-div .product-grid9 .pic-1 {
+  opacity: 1;
+  transition: all 0.5s ease-out 0s;
+}
+#product-div .product-grid9:hover .pic-1 {
+  opacity: 0;
+}
+#product-div .product-grid9 .pic-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease-out 0s;
+}
+#product-div .product-grid9:hover .pic-2 {
+  opacity: 1;
+}
+#product-div .product-grid9 .product-content {
+  padding: 12px 12px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#product-div .product-grid9 .title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0 0 3px;
+  transition: all 0.3s ease 0s;
+}
+#product-div .product-grid9 .title a {
+  color: rgba(0, 0, 0, 0.5);
+}
+#product-div .product-grid9 .title a:hover {
+  color: #c0392b;
+}
+#product-div .product-grid9 .add-to-cart {
+  display: block;
+  color: #c0392b;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0;
+  position: absolute;
+  left: 126px;
+  bottom: -20px;
+  transition: all 0.5s ease 0s;
+}
+#product-div .product-grid9:hover .add-to-cart {
+  opacity: 2;
+  bottom: 10%;
+}
+
+@media only screen and (max-width: 990px) {
+  #product-div .product-grid9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 652px){
+  #product-div .tab label {
+    left: 15px;
+}
+   
+}
+
+/********************* Shopping Demo-5 (tab-2) **********************/
+#product-div .product-image5 .pic-1, #product-div .product-image5 .pic-2 {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+#product-div .product-grid5 {
+  font-family: Poppins, sans-serif;
+  position: relative;
+}
+#product-div .product-grid5 .product-image5 {
+  overflow: hidden;
+  position: relative;
+}
+#product-div .product-grid5 .product-image5 a {
+  display: block;
+}
+#product-div .product-grid5 .product-image5 img {
+  width: 85%;
+  height: auto;
+}
+
+#product-div .product-image5 .pic-1 {
+  opacity: 1;
+}
+
+#product-div .product-grid5:hover .product-image5 .pic-1 {
+  opacity: 0;
+}
+
+#product-div .product-image5 .pic-2 {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#product-div .product-grid5:hover .product-image5 .pic-2 {
+  opacity: 1;
+}
+
+#product-div .product-grid5 .select-options {
+  color: #777;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 5px;
+  margin: 0 auto;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  width: 80%;
+  left: -15%;
+  bottom: -100px;
+  right: 0;
+  transition: 0.5s ease 0s;
+}
+#product-div .product-grid5 .select-options:hover {
+  color: #fff;
+  background-color: #1e3799;
+  text-decoration: none;
+}
+#product-div .product-grid5:hover .select-options {
+  opacity: 1;
+  bottom: 10px;
+}
+#product-div .product-grid5 .product-content {
+  padding: 20px 10px;
+}
+#product-div .product-grid5 .title {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+  transition: all 0.3s ease 0s;
+}
+#product-div .product-grid5 .title a {
+  color: #222;
+}
+#product-div .product-grid5 .title a:hover {
+  color: #1e3799;
+}
+@media only screen and (max-width: 990px) {
+  #product-div .product-grid5 {
+    margin-bottom: 30px;
+  }
+}
+
+/* images responsive */
+@media only screen and (max-width: 773px) {
+	#product-div .product-grid5 .product-image5 img {
+  width: 100%;
+  height: auto;
+}
+}
+/* col responsive display none */
+@media only screen and (max-width: 779px){
+	#col-responsive-1,  #col-responsive-2, #col-responsive-3, #col-responsive-4, #col-responsive-5, #col-responsive-6, #col-responsive-7,#col-responsive-8, #col-responsive-9, #col-responsive-10, #col-responsive-11, #col-responsive-12{
+	display: none;
+   }
+}
+@media only screen and (min-width:672px) and (max-width:766px){
+  #row-responsive-1, #row-responsive-2, #row-responsive-3, #row-responsive-4, #row-responsive-5, #row-responsive-6{
+	display: none;
+  } 
+}
+@media only screen and (max-width:413px){
+
+	#product-div .tabs .sidebar-heading h3{
+  margin: 0 0 0 10px;
+}
+	#product-div .tabs {
+  min-height: 730px; /* This part sucks */
+}
+#product-div .content {
+  left: 120px;
+  padding: 5px;
+}
+#product-div .tab label {
+  padding: 7px 15px; 
+  margin-left: -10px; 
+  font-size: 10px;
+  left: 10px;   
+  width: 150px;
+}
+}
+@media only screen and (max-width:420px) and (min-width:413px){
+	#product-div .content {
+  left: 160px;
+}
+
+
+}
+		/*================================= BANNER DIV START ==================================*/
+		/* ------------------------------*/
+/* two banner */
+/* ------------------------------*/
+#banner-div .body {
+	background-color: transparent;
+	bottom: 0;
+	position: absolute;
+	
+  }
+  #banner-div .media {
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	position: absolute;
+	transition: all 0.3s ease;
+	width: 100%;
+  }
+  #banner-div figure {
+	height: 290px;
+	overflow: hidden;
+	position: relative;
+  }
+  #banner-div figure a {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+  }
+  #banner-div figure:hover .media {
+	transform: scale(1.13);
+  }
+  #banner-div figcaption {
+	color: #252830;
+	height: calc(100% - 30px);
+	margin: 15px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 250px;
+  }
+  #banner-div .main {
+  width: 60%;
+  height: 50%;
+  margin: 10px;
+  font-family: "neontubes";
+  font-size: 6rem;
+  white-space: nowrap;
+}
+
+#banner-div .main span {
+  display: block;
+  position: relative;
+  transform: translateZ(0) translate3D(0, 0, 0);
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+
+#banner-div .main .first-span {
+  font-size: 6rem;
+  color: #ffd9e2;
+  text-shadow: 0 0 0 transparent, 0 0 10px #ff003c,
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c,
+    0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+  animation: blink 4s infinite alternate;
+}
+
+#banner-div .main .second-span {
+  font-size: 6rem;
+  color: #d4eaff;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff,
+    0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff,
+    0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+	animation: blink 3s infinite alternate;
+}
+
+@-webkit-keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes buzz {
+  70% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  46% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+    #banner-div .main .first-span {
+    font-size: 4rem;
+  }
+  #banner-div .main .second-span {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+    #banner-div .main .first-span {
+    font-size: 3rem;
+  }
+  #banner-div .main .second-span {
+    font-size: 3rem;
+  }
+}
+
+
+		/*================================= BANNER DIV END ==================================*/
+
+		/*================================= SHIPPING DIV ==================================*/
+		#shipping-div {
+			margin: 50px 0;
+		}
+
+		#shipping-div .container {
+			border: none;
+			justify-content: space-between;
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+		}
+
+		#shipping-div .shipping-items-icon-1,
+		#shipping-div .shipping-items-icon-2,
+		#shipping-div .shipping-items-icon-3,
+		#shipping-div .shipping-items-icon-4 {
+			margin-right: 10px;
+		}
+
+		#shipping-div .shipping-items-icon-1 i,
+		#shipping-div .shipping-items-icon-2 i,
+		#shipping-div .shipping-items-icon-3 i,
+		#shipping-div .shipping-items-icon-4 i {
+			color: #bb4444;
+		}
+
+		/*================================= TESTIMONIAL START ==================================*/
+		#testimonial-div h2 {
+			color: #111010;
+			font-size: 25px;
+			font-weight: 700;
+			letter-spacing: 1.8px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		#testimonial-div .brand_border {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		#testimonial-div .brand_border .fa.fa-minus{
+			color: #fff;
+			font-size: 8px;
+			height: 2px;
+			background: #bb4444 none repeat scroll 0 0;
+			width: 100px;
+		}
+
+
+		#testimonial-div a:hover,
+		#testimonial-div a:focus {
+			text-decoration: none !important;
+		}
+
+		#testimonial-div .testimonial {
+
+			margin: 0px 50px;
+
+			background-color: #fff;
+
+			color: #4d4839;
+
+			text-align: center;
+
+		}
+
+		#testimonial-div .testimonial-content {
+
+			padding: 40px 30px 40px;
+
+			border-top: 1px solid black;
+
+			border-left: 1px solid black;
+
+			position: relative;
+
+			margin-bottom: 50px;
+
+			font-size: 15px;
+
+			line-height: 30px;
+
+			text-align: left;
+
+		}
+
+		#testimonial-div .testimonial .testimonial-content:before {
+
+			content: "\f10e";
+
+			font-family: fontawesome;
+
+			float: left;
+
+			display: inline-block;
+
+			color: #bb4444;
+
+			padding: 0 15px 5px 0;
+
+			font-size: 30px;
+
+			text-align: center;
+
+			position: relative;
+
+			top: 12px;
+
+			left: 0px;
+
+		}
+
+		#testimonial-div .testimonial .testimonial-content:after {
+
+			content: "";
+
+			position: absolute;
+
+			bottom: 0;
+
+			left: 0;
+
+			width: 50%;
+
+			height: 1px;
+
+			background-color: black;
+
+		}
+
+		#testimonial-div .testimonial .testimonial-info {
+
+			position: relative;
+
+		}
+
+		#testimonial-div .testimonial .testimonial-info:before {
+
+			content: "";
+
+			position: absolute;
+
+			top: -50px;
+
+			left: 50%;
+
+			background-color: black;
+
+			width: 1px;
+
+			height: 20px;
+
+		}
+
+		#testimonial-div .testimonial .testimonial-info:after {
+
+			content: "";
+
+			position: absolute;
+
+			top: -70px;
+
+			left: 50%;
+
+			background-color: black;
+
+			width: 2px;
+
+			height: 40px;
+
+			transform: skewX(-45deg);
+
+			transform-origin: 100% 100% 0;
+
+		}
+
+		#testimonial-div .testimonial .pic {
+
+			display: inline-block;
+
+			width: 100px;
+
+			height: 100px;
+
+			border-radius: 50%;
+
+			margin-right: 7px;
+
+		}
+
+		#testimonial-div .testimonial .pic img {
+
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			object-fit: cover;
+
+		}
+
+		#testimonial-div .testimonial .testimonial-title {
+
+			display: inline-block;
+
+		}
+
+		#testimonial-div .testimonial .testimonial-title a {
+
+			display: block;
+
+			color:#bb4444;
+
+			font-size: 22px;
+
+			text-transform: capitalize;
+
+			font-weight: 700;
+
+			letter-spacing: 1px;
+
+		}
+
+
+
+		#testimonial-div .owl-theme .owl-controls {
+
+			margin-top: 50px;
+
+			margin-left: 30px;
+
+		}
+
+		#testimonial-div .owl-theme .owl-controls .owl-page span {
+
+			height: 10px;
+
+			width: 10px;
+
+			background-color: #6d1111;
+
+			opacity: 0.8;
+
+			border-radius: 0;
+			border-radius: 50%;
+
+			transform: rotate(45deg) !important;
+
+		}
+
+		#testimonial-div .owl-theme .owl-controls .owl-page.active span,
+		#testimonial-div .owl-theme .owl-controls.clickable .owl-page:hover span {
+
+			background-color: #bb4444;
+
+		}
+
+		/*================================= TESTIMONIAL END ==================================*/
+
+
+		/*================================= footer start ==================================*/
+		.footer {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background: #ffffff;
+		}
+
+        .footer .footer-logo{
+            margin-top: -90px;
+            margin-left: -15px;
+            height: 190px;
+            width: 200px;
+        }
+        .footer .footer-logo img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+		.footer a {
+			transition: .3s;
+		}
+
+		.footer a:hover,
+		.footer a:active,
+		.footer a:focus {
+			outline: none;
+			text-decoration: none;
+		}
+
+		.footer {
+			position: relative;
+			padding-top: 45px;
+			background: #121518;
+		}
+
+		.footer .footer-blog,
+		.footer .footer-tags,
+		.footer .footer-newsletter {
+			position: relative;
+			margin-bottom: 45px;
+		}
+
+		.footer .footer-blog h3,
+		.footer .footer-insta h3,
+		.footer .footer-tags h3,
+		.footer .footer-newsletter h3 {
+			position: relative;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			font-size: 18px;
+			font-weight: 400;
+			color: #ffffff;
+		}
+
+		.footer .footer-blog h3::after,
+		.footer .footer-insta h3::after,
+		.footer .footer-tags h3::after,
+		.footer .footer-newsletter h3::after {
+			position: absolute;
+			content: "";
+			width: 50px;
+			height: 2px;
+			left: 0;
+			bottom: 0;
+			background: #ffffff;
+		}
+
+        .footer .footer-newsletter .footer-address{
+            margin-left: -14px;
+        }
+
+		.footer .footer-blog div {
+		    position: relative;
+			
+		}
+
+		.footer .footer-blog div p {
+			color: white;
+            margin-top: -25px;
+			font-size: 13px;
+			font-weight: 500;
+			letter-spacing: 1px;
+		}
+
+
+		.footer .footer-insta a {
+			padding: 0 5px 5px 0;
+            color: white;
+			display: block;
+			width: 100%;
+			float: left;
+		}
+        .footer .footer-insta a:hover {
+            text-decoration: underline ;
+        }
+
+		.footer .footer-tags {
+			font-size: 0;
+		}
+
+		.footer .footer-tags a {
+			display: inline-block;
+			margin: 0 5px 5px 0;
+			padding: 3px 8px;
+			font-size: 14px;
+			color: #dddddd;
+			text-transform: capitalize;
+			border: 1px solid #dddddd;
+		}
+
+        
+        .footer .footer-newsletter div {
+			position: relative;
+			padding-left: 15px;
+		}
+		.footer .footer-newsletter {
+            text-align: left;
+			margin-bottom: 5px;
+			font-size: 16px;
+			color: white;
+		}
+
+		.footer .footer-newsletter div a:hover {
+			color: #0085ff;
+		}
+
+		/* .footer .footer-newsletter div p::before {
+			position: absolute;
+			content: "\f017";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 400;
+			color: #757575;
+			left: 15px;
+		} */
+
+
+		.footer .footer-tags a:hover {
+			color: #ffffff;
+			background: #0085ff;
+			border-color: #0085ff;
+		}
+
+		.footer .footer-contact {
+			position: relative;
+			padding: 5px 0;
+			text-align: left;
+		}
+
+		.footer .footer-contact h4 {
+			position: relative;
+			margin-bottom: 10px;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			color: #ffffff;
+		}
+
+		.footer .footer-contact p {
+			margin: 0;
+			font-size: 16px;
+			color: #999999;
+		}
+
+		.footer .footer-contact a {
+			display: inline-block;
+		}
+
+		.footer .footer-contact a i {
+			margin-right: 10px;
+			font-size: 18px;
+			color: #999999;
+		}
+
+		.footer .footer-contact a:last-child i {
+			margin: 0;
+		}
+
+		.footer .footer-contact a:hover i {
+			color: #0085ff;
+		}
+
+		@media (max-width: 767.98px) {
+			.footer .footer-contact .col-md-4 {
+				margin-bottom: 25px;
+			}
+
+			.footer .footer-contact .col-md-4:last-child {
+				margin: 0;
+			}
+		}
+
+		.footer .copyright {
+			position: relative;
+			padding: 25px 0;
+			background: #000000;
+		}
+
+		.footer .copyright .copy-text p {
+			margin: 0;
+			font-size: 16px;
+			font-weight: 400;
+			color: #999999;
+		}
+
+		.footer .copyright .copy-text p a {
+			color: #dddddd;
+		}
+
+		.footer .copyright .copy-text p a:hover {
+			color: #0085ff;
+		}
+
+		.footer .copyright .copy-menu {
+			position: relative;
+			font-size: 0;
+			text-align: right;
+		}
+
+		.footer .copyright .copy-menu a {
+			color: #999999;
+			font-size: 16px;
+			font-weight: 400;
+			margin-right: 15px;
+			padding-right: 15px;
+			border-right: 1px solid rgba(255, 255, 255, .3);
+		}
+
+		.footer .copyright .copy-menu a:hover {
+			color: #0085ff;
+		}
+
+		.footer .copyright .copy-menu a:last-child {
+			margin-right: 0;
+			padding-right: 0;
+			border-right: none;
+		}
+
+		@media (max-width: 767.98px) {
+
+			.footer .copyright .copy-text,
+			.footer .copyright .copy-menu {
+				text-align: center;
+			}
+
+			.footer .copyright .copy-text p {
+				margin-bottom: 5px;
+			}
+
+		}
+	</style>
+
+</head>
+
+<body>
+	<!------------------------------- MEGA MENU ------------------------------------------------>
+	<header class="header">
+		<div class="container">
+			<div class="row v-center">
+				<div class="header-item item-left">
+					<div class="logo-div">
+						<a href="#"><img src="images/20201117_190924.png" alt=""></a>
+					</div>
+				</div>
+				<!-- menu start here -->
+				<div class="header-item item-center">
+					<div class="menu-overlay"></div>
+					<nav class="menu">
+						<div class="mobile-menu-head">
+							<div class="go-back"><i class="fa fa-angle-left"></i></div>
+							<div class="current-menu-title"></div>
+							<div class="mobile-menu-close">&times;</div>
+						</div>
+						<ul class="menu-main">
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="about-us.html">About Us</a>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">New <i class="fa fa-angle-down"></i></a>
+								<div class="sub-menu mega-menu mega-menu-column-4">
+									<div class="list-item text-center">
+										<a href="#">
+											<img src="https://th.bing.com/th/id/R.ce8de1adaa3fcc169f0d97c436b8274b?rik=6W1qX6Qp03lNWg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1504633273314-6a929fcd7090%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9%26s%3de8e0ff2cce3792a276fa84086113a17c&ehk=chx16tzqSRzpfA6BYM4FNaZZ%2fMJwEtxaqHPW1FZb9FI%3d&risl=&pid=ImgRaw&r=0"
+												alt="Fashion" />
+											<h4 class="title">Fashion</h4>
+										</a>
+									</div>
+									<div class="list-item text-center">
+										<a href="#">
+											<img src="https://img.freepik.com/free-photo/male-technician-repairing-computer-motherboard-wooden-desk_23-2147923493.jpg?w=740&t=st=1671765056~exp=1671765656~hmac=4c8dffc9558819b4c21b126aaa394150f48adc3be9c8004c0b65d0420709ec00"
+												alt="Electronics" />
+											<h4 class="title">Electronics</h4>
+										</a>
+									</div>
+									<div class="list-item text-center">
+										<a href="#">
+											<img src="https://images.unsplash.com/photo-1571380401583-72ca84994796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+												alt="Mobiles" />
+											<h4 class="title">Mobiles</h4>
+										</a>
+									</div>
+									<div class="list-item text-center">
+										<a href="#">
+											<img src="https://images.unsplash.com/photo-1578643463396-0997cb5328c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
+												alt="Appliances" />
+											<h4 class="title">Appliances</h4>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">Shop <i class="fa fa-angle-down"></i></a>
+								<div class="sub-menu mega-menu mega-menu-column-4">
+									<div class="list-item">
+										<h4 class="title">Men's Fashion</h4>
+										<ul>
+											<li><a href="#">T-Shirts</a></li>
+											<li><a href="#">Jeans</a></li>
+											<li><a href="#">Suit</a></li>
+											<li><a href="#">Kurta</a></li>
+											<li><a href="#">Watch</a></li>
+										</ul>
+										<h4 class="title">Beauty</h4>
+										<ul>
+											<li><a href="#">Moisturizer</a></li>
+											<li><a href="#">Face powder</a></li>
+											<li><a href="#">Lipstick</a></li>
+										</ul>
+									</div>
+									<div class="list-item">
+										<h4 class="title">Women's Fashion</h4>
+										<ul>
+											<li><a href="#">Sarees</a></li>
+											<li><a href="#">Sandals</a></li>
+											<li><a href="#">Watchs</a></li>
+											<li><a href="#">Shoes</a></li>
+										</ul>
+										<h4 class="title">Furniture</h4>
+										<ul>
+											<li><a href="#">Chairs</a></li>
+											<li><a href="#">Tables</a></li>
+											<li><a href="#">Doors</a></li>
+											<li><a href="#">Bed</a></li>
+										</ul>
+									</div>
+									<div class="list-item">
+										<h4 class="title">Home, Kitchen</h4>
+										<ul>
+											<li><a href="#">Kettle</a></li>
+											<li><a href="#">Toaster</a></li>
+											<li><a href="#">Dishwasher</a></li>
+											<li><a href="#">Microwave oven</a></li>
+											<li><a href="#">Pitcher</a></li>
+											<li><a href="#">Blender</a></li>
+											<li><a href="#">Colander</a></li>
+											<li><a href="#">Tureen</a></li>
+											<li><a href="#">Cookware</a></li>
+										</ul>
+									</div>
+									<div class="list-item">
+										<img src="https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
+											alt="Chair" />
+									</div>
+								</div>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">Blog <i class="fas fa-angle-down"></i></a>
+								<div class="sub-menu single-column-menu">
+									<ul>
+										<li><a href="#">Standard Layout</a></li>
+										<li><a href="#">Grid Layout</a></li>
+										<li><a href="#">single Post Layout</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">Pages <i class="fas fa-angle-down"></i></a>
+								<div class="sub-menu single-column-menu">
+									<ul>
+										<li><a href="#">Login</a></li>
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Faq</a></li>
+										<li><a href="#">404 Page</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- menu end here -->
+				<div class="header-item item-right">
+					<a href="#"><i class="fas fa-search"></i></a>
+					<a href="#"><i class="far fa-heart"></i></a>
+					<a href="#"><i class="fas fa-shopping-cart"></i></a>
+					<!-- mobile menu trigger -->
+					<div class="mobile-menu-trigger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!------------------------------- TOP BANNER ------------------------------------------------>
+    <div id="top-banner">
+		
+	</div>
+	<!------------------------------- TOP BANNER END ------------------------------------------------>
+
+	<!------------------------------- ABOUT US ------------------------------------------------>
+	<div id="about-div">
+		<section class="section_all bg-light" id="about">
+			<div class="container">
+				<!-- <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title_all text-center">
+                            <h3 class="font-weight-bold">Welcome To <span class="text-custom">Lorem Ipsum</span></h3>
+                            <p class="section_subtitle mx-auto text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <div class="">
+                                <i class=""></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+				<div class="row vertical_content_manage">
+					<div class="col-md-6 d-flex">
+						<div class="image-about-1">
+							<img src="https://img.freepik.com/free-photo/front-view-elegant-girl-red-dress-leans-chair-looks-camera_8353-11655.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais"
+								alt="">
+
+						</div>
+						<div class="image-about-2">
+							<img src="https://img.freepik.com/free-photo/front-view-elegant-girl-red-dress-leans-chair-looks-camera_8353-11655.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais"
+								alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about_header_main mt-3">
+							<div class="about_icon_box">
+								<p class="text_custom font-weight-bold">Lorem Ipsum is simply dummy text</p>
+							</div>
+							<h4 class="about_heading text-capitalize font-weight-bold mt-4">Lorem Ipsum is simply dummy
+								text of the printing industry.</h4>
+							<p class="text-muted mt-3">Contrary to popular belief, Lorem Ipsum is not simply random
+								text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+								2000 years old.</p>
+
+							<p class="text-muted mt-3"> Richard McClintock, a Latin professor at Hampden-Sydney College
+								in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+								Ipsum passage.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!------------------------------- PRODUCT ------------------------------------------------>
+	<div id="product-div" class="product-container">
+        <div class="tabs">
+
+            <div class="sidebar-heading">
+                <h3>Categories</h3>
+                <hr>
+            </div>
+			<!-- ''''''''''''''''''''''''''''''tab-1'''''''''''''''''''''''''''''''''''' -->
+                <div class="tab">
+                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                    <label for="tab-1">Lehanga</label>
+                    
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+								<div class="col-md-3 col-6">
+									<div class="product-grid5">
+										<div class="product-image5">
+											<a href="#">
+												<img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+											</a>
+										   
+											<a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+										</div>
+										<div class="product-content">
+											<h3 class="title"><a href="#">Women's Saree</a></h3>
+										   
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<div class="product-grid5">
+										<div class="product-image5">
+											<a href="#">
+												<img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+											</a>
+										   
+											<a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+										</div>
+										<div class="product-content">
+											<h3 class="title"><a href="#">Women's Saree</a></h3>
+									 
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<div class="product-grid5">
+										<div class="product-image5">
+											<a href="#">
+												<img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+											</a>
+										   
+											<a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+										</div>
+										<div class="product-content">
+											<h3 class="title"><a href="#">Women's Saree</a></h3>
+										   
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-6">
+									<div class="product-grid5">
+										<div class="product-image5">
+											<a href="#">
+												<img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+											</a>
+										   
+											<a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+										</div>
+										<div class="product-content">
+											<h3 class="title"><a href="#">Women's Saree</a></h3>
+										   
+										</div>
+									</div>
+								</div>
+							</div>
+
+                            <div class="row" id="row-responsive-1">
+                                <div class="col-md-3 col-6">
+                                    <div class="product-grid5">
+                                        <div class="product-image5">
+                                            <a href="#">
+                                                <img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+                                            </a>
+                                            
+                                            <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Women Shirts</a></h3>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="product-grid5">
+                                        <div class="product-image5">
+                                            <a href="#">
+                                                <img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+                                            </a>
+                                            
+                                            <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Women Shirts</a></h3>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6" id="col-responsive-1">
+                                    <div class="product-grid5">
+                                        <div class="product-image5" id="img-responsive">
+                                            <a href="#">
+                                                <img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+                                            </a>
+                                            
+                                            <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Women Shirts</a></h3>
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6" id="col-responsive-2">
+                                    <div class="product-grid5">
+                                        <div class="product-image5">
+                                            <a href="#">
+                                                <img class="pic-1" src="https://media.istockphoto.com/id/520795264/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=190nWPqbQPW9J9ADeCqJpeB9fZnOJLS_Qxww0-gX4Jw=">
+                                                <img class="pic-2" src="https://media.istockphoto.com/id/520795474/photo/beautiful-indian-women-portrait-with-jewelry.jpg?s=612x612&w=0&k=20&c=BiZxj9Uu93xP0eW7ktWymiglOsuIjcXNXJhnlJqXPJA=">
+                                            </a>
+                                            
+                                            <a href="#" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="title"><a href="#">Women Shirts</a></h3>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- view more link -->
+                                <div class="view-more-products text-center">
+                                    <a href="">View More Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </div>
+          
+			<!-- ''''''''''''''''''''''''''''''tab-2'''''''''''''''''''''''''''''''''''' -->
+            <div class="tab">
+                <input type="radio" id="tab-2" name="tab-group-1">
+                <label for="tab-2">Saree</label>
+                
+                <div class="content">
+                    <div class="container">
+                       
+                        
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1059524122/photo/beautiful-charming-indian-woman-in-saree.jpg?s=612x612&w=0&k=20&c=C-MRK2i5nQviA2dHXsrsecwIB4iLBZtmgTn4a_RFNZw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1061191246/photo/charming-indian-woman-in-traditional-saree.jpg?s=612x612&w=0&k=20&c=cbILqBg0YsskyKjFJnVdO8GKhfJnvwS9Llfo57NlUkU=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1266818284/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=GfSx-6AqPLlNrfKwzyGq-DweBRw0QDGAZQxsgw2Ho98=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1266819056/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=USAJVMRE3AuRJKUD1HQNTyGAI9c2Pq5JzyccPOsyVXI=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400842.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400840.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1284963487/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=lTlp6OQXjwuYzNXV0VlG4JQxoy5rbJsZw81GCsiSds0=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1284963485/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=fx97jd4bGn1P4Qy98s90VNdmrFqWL_FNQfLlO7FVADo=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="row-responsive-2">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1059524122/photo/beautiful-charming-indian-woman-in-saree.jpg?s=612x612&w=0&k=20&c=C-MRK2i5nQviA2dHXsrsecwIB4iLBZtmgTn4a_RFNZw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1061191246/photo/charming-indian-woman-in-traditional-saree.jpg?s=612x612&w=0&k=20&c=cbILqBg0YsskyKjFJnVdO8GKhfJnvwS9Llfo57NlUkU=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1266818284/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=GfSx-6AqPLlNrfKwzyGq-DweBRw0QDGAZQxsgw2Ho98=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1266819056/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=USAJVMRE3AuRJKUD1HQNTyGAI9c2Pq5JzyccPOsyVXI=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-3">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400842.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400840.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-4">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1284963487/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=lTlp6OQXjwuYzNXV0VlG4JQxoy5rbJsZw81GCsiSds0=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1284963485/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=fx97jd4bGn1P4Qy98s90VNdmrFqWL_FNQfLlO7FVADo=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="row">
+							<!-- view more link -->
+							<div class="view-more-products text-center">
+								<a href="">View More Products</a>
+							</div>
+						</div>
+                    </div>
+        
+                </div> 
+            </div>
+             
+			<!-- ''''''''''''''''''''''''''''''tab-3'''''''''''''''''''''''''''''''''''' -->
+             <div class="tab">
+                <input type="radio" id="tab-3" name="tab-group-1">
+                <label for="tab-3">Kurta Sets</label>
+              
+                <div class="content">
+					<div class="container">
+                       
+                        
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                        
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                        
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                        
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="row-responsive-3">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais=">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-5">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/premium-photo/pretty-girl-posing-confidently-with-attitude-fashion-shoot-wearing-desi-dress-street_658768-439.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/premium-photo/cute-young-girl-portrait-garden-wearing-des-dress-fashion-photoshoot_658768-286.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="row">
+							<!-- view more link -->
+							<div class="view-more-products text-center">
+								<a href="">View More Products</a>
+							</div>
+						</div>
+                    </div>
+                </div> 
+            </div>
+
+			<!-- ''''''''''''''''''''''''''''''tab-4'''''''''''''''''''''''''''''''''''' -->
+               <div class="tab">
+                <input type="radio" id="tab-4" name="tab-group-1">
+                <label for="tab-4">Sharara</label>
+              
+                <div class="content">
+					<div class="container">
+                       
+                        
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1286408377/photo/young-woman-facial-expression-stock-photo.jpg?s=612x612&w=0&k=20&c=yuO9um4myRbAEQoUSRss8XXbBiRVgsbxZG5hjalmQrw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1061191246/photo/charming-indian-woman-in-traditional-saree.jpg?s=612x612&w=0&k=20&c=cbILqBg0YsskyKjFJnVdO8GKhfJnvwS9Llfo57NlUkU=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1286408377/photo/young-woman-facial-expression-stock-photo.jpg?s=612x612&w=0&k=20&c=yuO9um4myRbAEQoUSRss8XXbBiRVgsbxZG5hjalmQrw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1266819056/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=USAJVMRE3AuRJKUD1HQNTyGAI9c2Pq5JzyccPOsyVXI=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1286408377/photo/young-woman-facial-expression-stock-photo.jpg?s=612x612&w=0&k=20&c=yuO9um4myRbAEQoUSRss8XXbBiRVgsbxZG5hjalmQrw=">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400840.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1286408377/photo/young-woman-facial-expression-stock-photo.jpg?s=612x612&w=0&k=20&c=yuO9um4myRbAEQoUSRss8XXbBiRVgsbxZG5hjalmQrw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1284963485/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=fx97jd4bGn1P4Qy98s90VNdmrFqWL_FNQfLlO7FVADo=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="row-responsive-4">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1286408377/photo/young-woman-facial-expression-stock-photo.jpg?s=612x612&w=0&k=20&c=yuO9um4myRbAEQoUSRss8XXbBiRVgsbxZG5hjalmQrw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1061191246/photo/charming-indian-woman-in-traditional-saree.jpg?s=612x612&w=0&k=20&c=cbILqBg0YsskyKjFJnVdO8GKhfJnvwS9Llfo57NlUkU=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1286408377/photo/young-woman-facial-expression-stock-photo.jpg?s=612x612&w=0&k=20&c=yuO9um4myRbAEQoUSRss8XXbBiRVgsbxZG5hjalmQrw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1266819056/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=USAJVMRE3AuRJKUD1HQNTyGAI9c2Pq5JzyccPOsyVXI=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-7">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1286408377/photo/young-woman-facial-expression-stock-photo.jpg?s=612x612&w=0&k=20&c=yuO9um4myRbAEQoUSRss8XXbBiRVgsbxZG5hjalmQrw=">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400840.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-8">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1284963487/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=lTlp6OQXjwuYzNXV0VlG4JQxoy5rbJsZw81GCsiSds0=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1284963485/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=fx97jd4bGn1P4Qy98s90VNdmrFqWL_FNQfLlO7FVADo=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="row">
+							<!-- view more link -->
+							<div class="view-more-products text-center">
+								<a href="">View More Products</a>
+							</div>
+						</div>
+                    </div>
+                </div> 
+            </div>
+               <!-- ''''''''''''''''''''''''''''''tab-5'''''''''''''''''''''''''''''''''''' -->
+            <div class="tab">
+                <input type="radio" id="tab-5" name="tab-group-1">
+                <label for="tab-5">Suit Sets</label>
+              
+                <div class="content">
+					<div class="container">
+                       
+                        
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1059524122/photo/beautiful-charming-indian-woman-in-saree.jpg?s=612x612&w=0&k=20&c=C-MRK2i5nQviA2dHXsrsecwIB4iLBZtmgTn4a_RFNZw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1061191246/photo/charming-indian-woman-in-traditional-saree.jpg?s=612x612&w=0&k=20&c=cbILqBg0YsskyKjFJnVdO8GKhfJnvwS9Llfo57NlUkU=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1266818284/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=GfSx-6AqPLlNrfKwzyGq-DweBRw0QDGAZQxsgw2Ho98=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1266819056/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=USAJVMRE3AuRJKUD1HQNTyGAI9c2Pq5JzyccPOsyVXI=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400842.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400840.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1284963487/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=lTlp6OQXjwuYzNXV0VlG4JQxoy5rbJsZw81GCsiSds0=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1284963485/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=fx97jd4bGn1P4Qy98s90VNdmrFqWL_FNQfLlO7FVADo=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="row-responsive-5">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1059524122/photo/beautiful-charming-indian-woman-in-saree.jpg?s=612x612&w=0&k=20&c=C-MRK2i5nQviA2dHXsrsecwIB4iLBZtmgTn4a_RFNZw=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1061191246/photo/charming-indian-woman-in-traditional-saree.jpg?s=612x612&w=0&k=20&c=cbILqBg0YsskyKjFJnVdO8GKhfJnvwS9Llfo57NlUkU=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1266818284/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=GfSx-6AqPLlNrfKwzyGq-DweBRw0QDGAZQxsgw2Ho98=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1266819056/photo/beautiful-indian-woman-in-sari.jpg?s=612x612&w=0&k=20&c=USAJVMRE3AuRJKUD1HQNTyGAI9c2Pq5JzyccPOsyVXI=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-9">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400842.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400840.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-10">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://media.istockphoto.com/id/1284963487/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=lTlp6OQXjwuYzNXV0VlG4JQxoy5rbJsZw81GCsiSds0=">
+                                            <img class="pic-2" src="https://media.istockphoto.com/id/1284963485/photo/pretty-indian-young-girl-dress-up-saree-for-festival.jpg?s=612x612&w=0&k=20&c=fx97jd4bGn1P4Qy98s90VNdmrFqWL_FNQfLlO7FVADo=">
+                                        </a>
+                                       
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="row">
+							<!-- view more link -->
+							<div class="view-more-products text-center">
+								<a href="">View More Products</a>
+							</div>
+						</div>
+                    </div>
+                </div> 
+            </div>
+
+			<!-- ''''''''''''''''''''''''''''''tab-6'''''''''''''''''''''''''''''''''''' -->
+            <div class="tab">
+                <input type="radio" id="tab-6" name="tab-group-1">
+                <label for="tab-6">Gowns</label>
+              
+                <div class="content">
+					<div class="container">
+                       
+                        
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13052.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13051.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+											<img class="pic-1" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1771.jpg?w=360&t=st=1683875552~exp=1683876152~hmac=abd5b6df1ccbe010e1cefa5b0fafb9def0134dec08342dbd25dce2f1fc439c71">
+											<img class="pic-2" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1774.jpg?size=626&ext=jpg">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13052.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13051.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+											<img class="pic-1" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1771.jpg?w=360&t=st=1683875552~exp=1683876152~hmac=abd5b6df1ccbe010e1cefa5b0fafb9def0134dec08342dbd25dce2f1fc439c71">
+											<img class="pic-2" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1774.jpg?size=626&ext=jpg">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="row-responsive-6">
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13052.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13051.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+											<img class="pic-1" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1771.jpg?w=360&t=st=1683875552~exp=1683876152~hmac=abd5b6df1ccbe010e1cefa5b0fafb9def0134dec08342dbd25dce2f1fc439c71">
+											<img class="pic-2" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1774.jpg?size=626&ext=jpg">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-11">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+                                            <img class="pic-1" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13052.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                            <img class="pic-2" src="https://img.freepik.com/free-photo/portrait-woman-beautiful-grey-dress_1303-13051.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6" id="col-responsive-12">
+                                <div class="product-grid5">
+                                    <div class="product-image5">
+                                        <a href="#">
+											<img class="pic-1" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1771.jpg?w=360&t=st=1683875552~exp=1683876152~hmac=abd5b6df1ccbe010e1cefa5b0fafb9def0134dec08342dbd25dce2f1fc439c71">
+											<img class="pic-2" src="https://img.freepik.com/free-photo/gorgeous-woman-with-blonde-wavy-hair-wearing-elegant-beige-dress_273443-1774.jpg?size=626&ext=jpg">
+                                        </a>
+                                      
+                                        <a href="#" class="select-options"><i class="fa fa-arrow-right"></i>Send Enquiry</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Saree</a></h3>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+						<div class="row">
+							<!-- view more link -->
+							<div class="view-more-products text-center">
+								<a href="">View More Products</a>
+							</div>
+						</div>
+                    </div>
+                </div> 
+            </div>
+            
+             
+         </div>
+
+         
+	</div>
+
+	<!------------------------------- FEATURE ------------------------------------------------>
+	<!-- Start shipping section -->
+	<!-- <section id="shipping-div">
+	<div class="container mt-5 p-4 rounded-0">
+		<div class="shipping-section-1 d-flex justify-content-between">
+			<div class="shipping-items d-flex align-items-center">
+				<div class="shipping-items-icon">
+					<i class="fa fa-truck fa-3x" aria-hidden="true"></i>
+				</div>
+				<div class="shipping-items-content">
+					<h2 class="shipping-items2-content-title h3">Shipping</h2>
+					<p class="shipping-items2-content-desc">From handpicked sellers</p>
+				</div>
+			</div>
+			<div class="shipping-items d-flex align-items-center">
+				<div class="shipping-items-icon">
+					<i class="fa fa-truck fa-3x" aria-hidden="true"></i>
+				</div>
+				<div class="shipping-items-content">
+					<h2 class="shipping-items2-content-title h3">Shipping</h2>
+					<p class="shipping-items2-content-desc">From handpicked sellers</p>
+				</div>
+			</div>
+			<div class="shipping-items d-flex align-items-center">
+				<div class="shipping-items-icon">
+					<i class="fa fa-truck fa-3x" aria-hidden="true"></i>
+				</div>
+				<div class="shipping-items-content">
+					<h2 class="shipping-items2-content-title h3">Shipping</h2>
+					<p class="shipping-items2-content-desc">From handpicked sellers</p>
+				</div>
+			</div>
+			<div class="shipping-items d-flex align-items-center">
+				<div class="shipping-items-icon">
+					<i class="fa fa-truck fa-3x" aria-hidden="true"></i>
+				</div>
+				<div class="shipping-items-content">
+					<h2 class="shipping-items2-content-title h3">Shipping</h2>
+					<p class="shipping-items2-content-desc">From handpicked sellers</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+	<!-- End shipping section -->
+
+	<!------------------------------- BANNER START------------------------------------------------>
+	<div id="banner-div">
+		 <!-- two section -->
+         <div class="twocards mt-5">
+   
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-lg-6 col-md-6  col-xs-12 mt-5">
+                  <figure>
+                    <div class="media" style="background-image:url(https://img.freepik.com/premium-photo/rich-beautiful-indian-woman-using-phone-5-star-hotel-room_250865-80.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais)"></div>
+                    <figcaption>
+                      
+                      <div class="body">
+                        <div class="main">
+                            
+                            <span class="second-span">Your text</span>
+                          </div>
+                      </div>
+                    </figcaption><a href=""></a>
+                  </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-5">
+                  <figure>
+                    <div class="media" style="background-image:url(https://img.freepik.com/premium-photo/rich-beautiful-indian-woman-using-phone-5-star-hotel-room_250865-80.jpg?size=626&ext=jpg&ga=GA1.1.2031644658.1674562410&semt=ais)"></div>
+                    <figcaption>
+                       
+                      <div class="body">
+                        <div class="main">
+                            
+                            <span class="first-span">Your Text</span>
+                          </div>
+                      </div>
+                    </figcaption><a href=""></a>
+                  </figure>
+                </div>
+              </div>
+              </div>
+                 </div>
+	</div>
+	<!------------------------------- BANNER END------------------------------------------------>
+
+	<!------------------------------- SHIPPING DIV ------------------------------------------------>
+	<div id="shipping-div">
+		<div class="container d-md-flex p-4 pt-5">
+			<div class="row">
+				<div class="col-6">
+					<div class="shipping-items-1 d-flex">
+						<div class="shipping-items-icon-1">
+							<i class="fas fa-truck fa-3x" aria-hidden="true"></i>
+						</div>
+						<div class="shipping-items-content">
+							<h2 class="shipping-items2-content-title h3">Shipping</h2>
+							<p class="shipping-items2-content-desc">From handpicked sellers</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="shipping-items-2 d-flex">
+						<div class="shipping-items-icon-2">
+							<i class="fas fa-leaf fa-3x" aria-hidden="true"></i>
+						</div>
+						<div class="shipping-items-content">
+							<h2 class="shipping-items2-content-title h3">Shipping</h2>
+							<p class="shipping-items2-content-desc">From handpicked sellers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<div class="shipping-items-3 d-flex">
+						<div class="shipping-items-icon-3">
+							<i class="fas fa-rotate-left fa-3x" aria-hidden="true"></i>
+						</div>
+						<div class="shipping-items-content">
+							<h2 class="shipping-items2-content-title h3">Shipping</h2>
+							<p class="shipping-items2-content-desc">From handpicked sellers</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="shipping-items-4 d-flex">
+						<div class="shipping-items-icon-4">
+							<i class="fas fa-handshake fa-3x" aria-hidden="true"></i>
+						</div>
+						<div class="shipping-items-content">
+							<h2 class="shipping-items2-content-title h3">Shipping</h2>
+							<p class="shipping-items2-content-desc">From handpicked sellers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------------------------------- SHIPPING DIV ------------------------------------------------>
+
+	<!------------------------------- TESTIMONIAL START ------------------------------------------------>
+	<div id="testimonial-div">
+		<h2>Our Happy Customers</h2>
+		<div class="brand_border">
+			<i class="fa fa-minus" aria-hidden="true"></i>
+			<i class="fas fa-star"></i>
+			<i class="fa fa-minus" aria-hidden="true"></i>
+		</div>
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<div id="testimonial-slider" class="owl-carousel">
+
+
+						<div class="testimonial">
+
+							<div class="testimonial-content">
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor
+									ipsum
+
+									molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+								</p>
+
+							</div>
+
+							<div class="testimonial-info">
+
+								<div class="pic">
+
+									<img
+										src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?size=626&ext=jpg&ga=GA1.2.2031644658.1674562410&semt=sph">
+
+								</div>
+
+								<h3 class="testimonial-title">
+
+									<a href="#">krystal</a>
+
+									<!-- <small>Web Developer</small>-->
+
+								</h3>
+
+							</div>
+
+						</div>
+
+
+
+						<div class="testimonial">
+
+							<div class="testimonial-content">
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor
+									ipsum
+
+									molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+								</p>
+
+							</div>
+
+							<div class="testimonial-info">
+
+								<div class="pic">
+
+									<img
+										src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?size=626&ext=jpg&ga=GA1.2.2031644658.1674562410&semt=sph">
+
+								</div>
+
+								<h3 class="testimonial-title">
+
+									<a href="#">John</a>
+
+									<!-- <small>Web Developer</small>-->
+
+								</h3>
+
+							</div>
+
+						</div>
+
+
+
+						<div class="testimonial">
+
+							<div class="testimonial-content">
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor
+									ipsum
+
+									molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+								</p>
+
+							</div>
+
+							<div class="testimonial-info">
+
+								<div class="pic">
+
+									<img
+										src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?size=626&ext=jpg&ga=GA1.2.2031644658.1674562410&semt=sph">
+
+								</div>
+
+								<h3 class="testimonial-title">
+
+									<a href="#">Enna</a>
+
+									<!-- <small>Web Developer</small>-->
+
+								</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!------------------------------- TESTIMONIAL END ------------------------------------------------>
+
+	<!------------------------------- FOOTER ------------------------------------------------>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-blog">
+						<div class="footer-logo">
+                            <img src="images/20201117_190924.png" alt="">
+                        </div>
+						<div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae excepturi veniam fugit quam sit sapiente architecto similique minima iusto ea.</p>
+							<div class="footer-contact">
+								<div class="row">
+									<div class="col">
+										<h4>Get in Touch</h4>
+										<a href=""><i class="fab fa-twitter"></i></a>
+										<a href=""><i class="fab fa-facebook-f"></i></a>
+										<a href=""><i class="fab fa-youtube"></i></a>
+										<a href=""><i class="fab fa-instagram"></i></a>
+										<a href=""><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+							</div>
+                        </div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-2">
+					<div class="footer-insta">
+						<h3>Quick Links</h3>
+						<a href="">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Our Blogs</a>
+                        <a href="">Home</a>
+                        <a href="">Home</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-tags">
+						<h3>Categories</h3>
+						<a href="">lehanga</a>
+						<a href="">Suit Sets</a>
+						<a href="">Saree</a>
+						<a href="">Kurti</a>
+						<a href="">Sharara</a>
+						<a href="">Kurta Sets</a>
+						<a href="">augue</a>
+						<a href="">rutrum</a>
+						<a href="">turpis</a>
+						<a href="">semper</a>
+						<a href="">lacinia</a>
+						<a href="">diam</a>
+						<a href="">velit</a>
+						<a href="">egestas</a>
+						<a href="">auctor</a>
+						<a href="">varius</a>
+						<a href="">metus</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="footer-newsletter">
+						<h3>Reach Us</h3>
+						
+                            <div class="footer-address">
+                                <label>Address</label>
+                                <span>
+                                    Plot No. 2P, Sy No. 384, 1st Floor,
+                                    Main Road, Thumkunta, Mdl: Shameerpet Dist: Medchal,
+                                    Malkajgiri - 500 078. T.S.
+                                </span>
+                                <br>
+                                <br>
+            
+                                <label>Phone : </label>
+                                <a href="#">232-232-2323</a>
+                                <br>
+            
+                                <label>Email : </label>
+                                <a href="#">www.example.com</a>
+                            </div>
+                        
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<div class="copy-text">
+							<p>&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="copy-menu">
+							<a href="">Terms</a>
+							<a href="">Privacy</a>
+							<a href="https://htmlcodex.com">Author</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------------------------------- FOOTER ------------------------------------------------>
+	<!------------------------------- JS ------------------------------------------------>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+		integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+		integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+		crossorigin="anonymous"></script>
+
+	<!-- testimonial -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script>
+		// ============================== MEGA MENU =============================================
+		const menu = document.querySelector(".menu");
+		const menuMain = menu.querySelector(".menu-main");
+		const goBack = menu.querySelector(".go-back");
+		const menuTrigger = document.querySelector(".mobile-menu-trigger");
+		const closeMenu = menu.querySelector(".mobile-menu-close");
+		let subMenu;
+		menuMain.addEventListener("click", (e) => {
+			if (!menu.classList.contains("active")) {
+				return;
+			}
+			if (e.target.closest(".menu-item-has-children")) {
+				const hasChildren = e.target.closest(".menu-item-has-children");
+				showSubMenu(hasChildren);
+			}
+		});
+		goBack.addEventListener("click", () => {
+			hideSubMenu();
+		})
+		menuTrigger.addEventListener("click", () => {
+			toggleMenu();
+		})
+		closeMenu.addEventListener("click", () => {
+			toggleMenu();
+		})
+		document.querySelector(".menu-overlay").addEventListener("click", () => {
+			toggleMenu();
+		})
+		function toggleMenu() {
+			menu.classList.toggle("active");
+			document.querySelector(".menu-overlay").classList.toggle("active");
+		}
+		function showSubMenu(hasChildren) {
+			subMenu = hasChildren.querySelector(".sub-menu");
+			subMenu.classList.add("active");
+			subMenu.style.animation = "slideLeft 0.5s ease forwards";
+			const menuTitle = hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+			menu.querySelector(".current-menu-title").innerHTML = menuTitle;
+			menu.querySelector(".mobile-menu-head").classList.add("active");
+		}
+
+		function hideSubMenu() {
+			subMenu.style.animation = "slideRight 0.5s ease forwards";
+			setTimeout(() => {
+				subMenu.classList.remove("active");
+			}, 300);
+			menu.querySelector(".current-menu-title").innerHTML = "";
+			menu.querySelector(".mobile-menu-head").classList.remove("active");
+		}
+
+		window.onresize = function () {
+			if (this.innerWidth > 991) {
+				if (menu.classList.contains("active")) {
+					toggleMenu();
+				}
+
+			}
+		}
+
+		// =============================TESTIMONIAL=============================================
+		$(document).ready(function () {
+
+			$("#testimonial-slider").owlCarousel({
+
+				items: 2,
+
+				itemsDesktop: [1000, 2],
+
+				itemsDesktopSmall: [979, 2],
+
+				itemsTablet: [768, 1],
+
+				pagination: true,
+
+				navigation: false,
+
+				slideSpeed: 1000,
+
+				singleItem: false,
+
+				navigationText: ["", ""],
+
+				autoPlay: true
+
+			});
+
+		});
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>
